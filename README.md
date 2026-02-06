@@ -172,7 +172,7 @@ pip install --upgrade pycryptodome
 
 **Bitcoin (BTC):**
 ```
-151feG2x2pUqG97p9kSKL7E3LgpukNWozT
+bc1q2tf2d7ts89amthax70mf64p9ez7c9xz56snku0
 ```
 
 すべての寄付は、すべての学習者に無料でアクセス可能な教育的サイバーセキュリティリソースの維持と改善に役立ちます。
