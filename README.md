@@ -1,24 +1,28 @@
-# LANセキュリティラボ
+<div align="center">
+
+# LAN セキュリティラボ
 
 **ローカルネットワーク環境向け暗号化通信学習ツール**
 
-![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
-![License](https://img.shields.io/badge/license-Educational-orange.svg)
-![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20macOS%20%7C%20Windows-lightgrey.svg)
+![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Platform](https://img.shields.io/badge/Platform-Linux_%7C_macOS_%7C_Windows-4E5D6C?style=for-the-badge)
+![License](https://img.shields.io/badge/License-Educational-FF8C00?style=for-the-badge)
+
+</div>
 
 ---
 
-## 概要
+## 📖 概要
 
-教育目的で設計されたAES-256暗号化を使用したクライアント・サーバー通信システムです。管理された実験環境において、暗号化されたネットワーク通信、リモートコマンド実行、セキュアなファイル転送プロトコルについて学習することができます。
+教育目的で設計された AES-256 暗号化を使用したクライアント・サーバー通信システムです。管理された実験環境において、暗号化されたネットワーク通信、リモートコマンド実行、セキュアなファイル転送プロトコルについて学習することができます。
 
-重要: 本ソフトウェアは許可された実験環境での教育利用専用に設計されています。
+> ⚠️ **重要**: 本ソフトウェアは許可された実験環境での教育利用専用に設計されています。
 
 ---
 
-## 機能
+## ✨ 主な機能
 
-* AES-256-CBC暗号化による安全な通信
+* AES-256-CBC 暗号化による安全な通信
 * リモートコマンド実行機能
 * 暗号化ファイル転送プロトコル
 * 複数クライアント対応
@@ -27,19 +31,19 @@
 
 ---
 
-## 技術仕様
+## 🛠️ 技術仕様
 
 | 項目 | 詳細 |
 |------|------|
 | 暗号化 | AES-256-CBC |
-| プロトコル | TCP/IPソケット |
+| プロトコル | TCP/IP ソケット |
 | デフォルトポート | 4444 |
 | エンコーディング | Base64 |
-| 言語 | Python 3.8以上 |
+| 言語 | Python 3.8 以上 |
 
 ---
 
-## インストール
+## 📥 インストール
 
 必要な依存関係をインストール:
 
@@ -49,7 +53,7 @@ pip install pycryptodome
 
 ---
 
-## 使用方法
+## 💻 使用方法
 
 ### サーバーのセットアップ
 
@@ -59,10 +63,10 @@ pip install pycryptodome
 python3 server.py
 ```
 
-表示されたIPアドレスとポートを記録:
+表示された IP アドレスとポートを記録:
 
 ```
-ローカルIP: 192.168.1.10
+ローカル IP: 192.168.1.10
 ポート: 4444
 ```
 
@@ -75,6 +79,7 @@ python3 client.py <サーバーIP> [ポート]
 ```
 
 例:
+
 ```bash
 python3 client.py 192.168.1.10 4444
 ```
@@ -105,7 +110,28 @@ Shell[1]> back
 
 ---
 
-## 教育への応用
+## 🔍 トラブルシューティング
+
+**接続の問題:**
+
+```bash
+# ファイアウォールを設定
+sudo ufw allow 4444/tcp
+
+# IP アドレスを確認
+ip addr show        # Linux/macOS
+ipconfig           # Windows
+```
+
+**暗号化エラー:**
+
+```bash
+pip install --upgrade pycryptodome
+```
+
+---
+
+## 🎓 教育への応用
 
 このツールキットは以下の実践的な学習を提供します:
 
@@ -118,17 +144,19 @@ Shell[1]> back
 
 ---
 
-## 許可された使用範囲
+## ✅ 許可された使用範囲
 
 本ソフトウェアは以下の文脈でのみ使用できます:
 
 **許可される用途:**
+
 * 個人の実験環境
 * 教育機関の実習室（許可を得た上で）
-* 仮想マシン環境（VirtualBox、VMwareなど）
+* 仮想マシン環境（VirtualBox、VMware など）
 * 自宅ネットワークでのテスト（自己所有デバイスのみ）
 
 **禁止される用途:**
+
 * システムへの無許可アクセス
 * 公共ネットワークへの展開
 * 本番環境での使用
@@ -138,39 +166,21 @@ Shell[1]> back
 
 ---
 
-## 推奨実験環境
+## 🧪 推奨実験環境
 
-* VirtualBoxまたはVMware仮想マシン
+* VirtualBox または VMware 仮想マシン
 * 隔離された自宅実験ネットワーク
 * 教育機関のサイバーセキュリティ実習室（適切な許可を得た上で）
 * コンテナ化環境
 
 ---
 
-## トラブルシューティング
-
-**接続の問題:**
-```bash
-# ファイアウォールを設定
-sudo ufw allow 4444/tcp
-
-# IPアドレスを確認
-ip addr show        # Linux/macOS
-ipconfig           # Windows
-```
-
-**暗号化エラー:**
-```bash
-pip install --upgrade pycryptodome
-```
-
----
-
-## 開発支援
+## 💛 開発支援
 
 この教育ツールが有用であると感じた場合、継続的な開発を支援することをご検討ください:
 
 **Bitcoin (BTC):**
+
 ```
 bc1q2tf2d7ts89amthax70mf64p9ez7c9xz56snku0
 ```
@@ -179,16 +189,20 @@ bc1q2tf2d7ts89amthax70mf64p9ez7c9xz56snku0
 
 ---
 
-## 教育理念
+## 🌐 教育理念
 
 本プロジェクトは、背景や経済状況に関係なく、すべての学習者に無料でアクセス可能なサイバーセキュリティ教育を提供することに取り組んでいます。すべての機能は無料で利用でき、ソフトウェアは教育利用規約の下で常に自由に利用可能です。
 
 ---
 
-## 免責事項
+## ⚠️ 免責事項
 
 本ソフトウェアは教育目的でのみ提供されています。ユーザーは、その使用が適用される法律、規制、および機関の方針に準拠していることを確保する全責任を負います。作成者は本ソフトウェアの誤用に対する一切の責任を負いません。
 
 ---
 
+<div align="center">
+
 *サイバーセキュリティ教育と倫理的学習のために開発*
+
+</div>
